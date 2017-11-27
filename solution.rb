@@ -2,5 +2,5 @@ require 'sinatra'
 
 
 get '/' do
- "#{request.user_agent}" 
+ request.env['HTTP_USER_AGENT']
 end
